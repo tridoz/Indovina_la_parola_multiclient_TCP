@@ -279,12 +279,11 @@ int main(){
     bkgd(COLOR_PAIR(1));
     clear();
     refresh();
-    
-    pthread_t thread_client[MAX_CLIENT];
 
     create_subwindows(subwindows);
-
-
+    
+    pthread_t thread_client[MAX_CLIENT];
+    
     struct sockaddr_in local, remote;
     unsigned int remote_len;
 
